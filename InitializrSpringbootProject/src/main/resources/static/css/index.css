@@ -1,0 +1,51 @@
+/*
+Position nos permite mover nuestros contenedores.
+box-sizing: border box; lo que hace es acomodar una seccion al ancho y width que 
+le hayamos asignado, y si le agrego padding o marging no se va hacer mas grande, sino que se va ajustar.
+
+STATIC: No se ve afectado por los demas.
+ABSOLUTE: Se ve afectado pero depende de la poscion de su padre(body))
+RELATIVE: Se puede acomodar mas libre.
+FIX: El se va acomodar al punto de vista del usuario, es decir si yo hago scroll el me va seguir apareciendo. no se va mover.
+Siempre va aparecer.(Ejemeplo cuando en una pagina web el menu de arriba el nav(siempreee se ve aunque hagamos scroll siempre 
+va estar ahi.))
+*/
+
+.block{
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border: 20px solid blue;
+    box-sizing: border-box; 
+}
+.static{
+   position: static;
+   border: 3px solid green;
+   top:400px;
+   left:500px;
+}
+
+.relative{
+    
+   position: relative;
+   border: 3px solid red;
+   top:400px;
+   left:500px;
+   width: 200px;
+    height: 200px; 
+}
+
+.absolute{
+   position: absolute;
+   border: 3px solid red;
+   top:200px;
+   left:500px;
+}
+
+.fix{
+      position: fixed;
+   border: 3px solid red;
+   top:150px;
+   left:100px;
+}
